@@ -1,6 +1,8 @@
 @file:JvmName("Basic") // Now for calling functions outside Basics.weather(8)
 package co.com.elkin.study.kotlin.javatokotlin.general
 
+import co.com.elkin.study.kotlin.javatokotlin.general.Colors.*
+
 fun main(args: Array<String>) {
     val person = Person("Elkin", 28)
     println(person.name + " es una chimba")
@@ -52,9 +54,9 @@ fun weather(degrees: Int){
 
 fun weather2(degrees: Int){
     val (description, color) = when {
-        degrees < 10 -> "cold" to Colors.BLUE
-        degrees > 25 -> "mild" to Colors.ORANGE
-        else -> "hot" to Colors.RED
+        degrees < 10 -> "cold" to BLUE
+        degrees > 25 -> "mild" to ORANGE
+        else -> "hot" to RED
     }
     println(message = "$description - $color")
 }
