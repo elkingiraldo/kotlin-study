@@ -1,6 +1,7 @@
 package co.com.elkin.study.kotlin.javatokotlin.general
 
 import java.io.IOException
+import java.lang.IllegalArgumentException
 
 
 fun main(args: Array<String>) {
@@ -12,6 +13,10 @@ fun main(args: Array<String>) {
     //instance of change by is
 
     iterateLoops();
+
+    //callException("", 105)
+    //callException("", 98)
+    callException("dsfgh", 98)
 
 }
 
@@ -55,7 +60,17 @@ fun iterateLoops() {
     }
 }
 
+//No difference between checked and unchecked exceptions
+//throw is an expression in kotlin, you can assign this result to a variable
+// try is an expression too
 @Throws(IOException::class) // For java implementation
-fun callException(s: String) {
-    if (s.isEmpty()) throw IOException() else "no error"
+fun callException(s: String, number: Int) {
+
+    val percentage =
+        if (number in 0..100)
+            number
+        else
+            throw IllegalArgumentException("Fail the number is: $number")
+
+    println(if (s.isEmpty()) throw IOException() else "no error")
 }
