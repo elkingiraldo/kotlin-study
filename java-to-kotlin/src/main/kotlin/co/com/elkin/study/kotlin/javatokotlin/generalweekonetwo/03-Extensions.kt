@@ -1,4 +1,4 @@
-package co.com.elkin.study.kotlin.javatokotlin.general
+package co.com.elkin.study.kotlin.javatokotlin.generalweekonetwo
 
 //String is the receiver of lastChar Function
 fun String.lastChar() = this.get(this.length - 1)

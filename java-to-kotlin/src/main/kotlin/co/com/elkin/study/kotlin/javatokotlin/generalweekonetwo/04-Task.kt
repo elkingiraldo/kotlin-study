@@ -1,4 +1,4 @@
-package co.com.elkin.study.kotlin.javatokotlin.general
+package co.com.elkin.study.kotlin.javatokotlin.generalweekonetwo
 
 data class Evaluation(val rightPosition: Int, val wrongPosition: Int)
 

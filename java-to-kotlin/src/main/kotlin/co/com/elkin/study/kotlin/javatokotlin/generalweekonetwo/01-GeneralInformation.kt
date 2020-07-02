@@ -1,7 +1,7 @@
 @file:JvmName("Basic") // Now for calling functions outside Basics.weather(8)
-package co.com.elkin.study.kotlin.javatokotlin.general
+package co.com.elkin.study.kotlin.javatokotlin.generalweekonetwo
 
-import co.com.elkin.study.kotlin.javatokotlin.general.Colors.*
+import co.com.elkin.study.kotlin.javatokotlin.generalweekonetwo.Colors.*
 
 fun main(args: Array<String>) {
     val person = Person("Elkin", 28)

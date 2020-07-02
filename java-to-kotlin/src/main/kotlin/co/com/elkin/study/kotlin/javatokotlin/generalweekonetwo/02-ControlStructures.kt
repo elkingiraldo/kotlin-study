@@ -1,4 +1,4 @@
-package co.com.elkin.study.kotlin.javatokotlin.general
+package co.com.elkin.study.kotlin.javatokotlin.generalweekonetwo
 
 import java.io.IOException
 import java.lang.IllegalArgumentException

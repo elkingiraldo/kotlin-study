@@ -1,4 +1,4 @@
-package co.com.elkin.study.kotlin.javatokotlin.general
+package co.com.elkin.study.kotlin.javatokotlin.generalweekonetwo
 
 //class -> constructor with attributes, getters
 //data -> equals, hashcode, toString
